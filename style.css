@@ -13,6 +13,10 @@
   --card-border:#E5E7EB;
   --section-alt:#F3F4F6;
   --footer-bg:  #0D1F3C;
+  --nav-text:       rgba(255,255,255,0.85);
+  --nav-text-hover: var(--gold);
+  --nav-bg:         transparent;
+  --nav-bg-scrolled: var(--navy);
 }
 
 [data-theme="dark"] {
@@ -24,6 +28,9 @@
   --card-border:#374151;
   --section-alt:#1a2535;
   --footer-bg:  #060d1a;
+  --nav-text:       rgba(255,255,255,0.85);
+  --nav-bg:         transparent;
+  --nav-bg-scrolled: var(--navy);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -44,9 +51,9 @@ h1, h2, h3, h4, h5, h6 {
 .py-6 { padding-top: 5rem; padding-bottom: 5rem; }
 
 #mainNav {
-  background-color: transparent;
-  transition: background-color 0.4s, box-shadow 0.4s;
-  padding: 1.2rem 0;
+ background-color: var(--navy);
+  padding: 0.9rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 #mainNav.scrolled {
   background-color: var(--navy);
