@@ -1,3 +1,48 @@
+/* Blackwell & Associates - Stylesheet */
+
+:root {
+  --navy:       #0D1F3C;
+  --navy-mid:   #162C55;
+  --gold:       #C9A84C;
+  --gold-light: #E2C46F;
+  --cream:      #F8F5EF;
+  --text-dark:  #1A1A2E;
+  --text-muted: #6B7280;
+  --white:      #FFFFFF;
+  --card-bg:    #FFFFFF;
+  --card-border:#E5E7EB;
+  --section-alt:#F3F4F6;
+  --footer-bg:  #0D1F3C;
+}
+
+[data-theme="dark"] {
+  --cream:      #111827;
+  --text-dark:  #F9FAFB;
+  --text-muted: #9CA3AF;
+  --white:      #1F2937;
+  --card-bg:    #1F2937;
+  --card-border:#374151;
+  --section-alt:#1a2535;
+  --footer-bg:  #060d1a;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--text-dark);
+}
+
+.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
+
 #mainNav {
   background-color: transparent;
   transition: background-color 0.4s, box-shadow 0.4s;
