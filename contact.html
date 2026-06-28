@@ -1,0 +1,68 @@
+<section class="section-contact py-6">
+  <div class="container">
+    <div class="row g-5">
+
+      <div class="col-lg-7">
+        <h3 class="mb-4">Send Us a Message</h3>
+        <form id="contactForm" novalidate>
+
+          <div class="mb-3">
+            <label for="contactName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="contactName" required>
+            <div class="invalid-feedback">Please enter your full name.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="contactPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="contactPhone" required pattern="^[0-9+\s-]{7,15}$">
+            <div class="invalid-feedback">Please enter a valid phone number.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="contactSubject" class="form-label">Practice Area</label>
+            <select class="form-select" id="contactSubject" required>
+              <option value="" selected disabled>Select a practice area</option>
+              <option>Corporate & Commercial Law</option>
+              <option>Criminal Defence</option>
+              <option>Family Law</option>
+              <option>Property & Conveyancing</option>
+              <option>Immigration Law</option>
+              <option>Civil Litigation</option>
+            </select>
+            <div class="invalid-feedback">Please select a practice area.</div>
+          </div>
+
+          <div class="mb-4">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="contactMessage" rows="5" required minlength="10"></textarea>
+            <div class="invalid-feedback">Please enter a message of at least 10 characters.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary-gold">Send Message</button>
+          <p id="formSuccessMsg" class="text-success mt-3 d-none">✓ Thank you — your message has been sent. We'll be in touch within 24 hours.</p>
+        </form>
+      </div>
+
+      <div class="col-lg-5">
+        <h3 class="mb-4">Visit Our Office</h3>
+        <ul class="footer-contact contact-info-list mb-4">
+          <li><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> 14th Floor, Anniversary Towers, University Way, Nairobi</li>
+          <li><i class="bi bi-telephone-fill" aria-hidden="true"></i> +254 720 100 200</li>
+          <li><i class="bi bi-envelope-fill" aria-hidden="true"></i> info@blackwelllaw.co.ke</li>
+          <li><i class="bi bi-clock-fill" aria-hidden="true"></i> Mon–Fri: 8:00am – 6:00pm</li>
+        </ul>
+        <div class="map-placeholder">
+          <i class="bi bi-map" aria-hidden="true"></i>
+          <span>Anniversary Towers, University Way, Nairobi</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
