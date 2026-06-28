@@ -55,3 +55,25 @@ if (blogSearchInput) {
     noResultsMsg.classList.toggle('d-none', visibleCount > 0);
   });
 }
+
+// Contact form validation
+const contactForm = document.getElementById('contactForm');
+const formSuccessMsg = document.getElementById('formSuccessMsg');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (contactForm.checkValidity()) {
+      // Form is valid — simulate successful submission
+      formSuccessMsg.classList.remove('d-none');
+      contactForm.reset();
+      contactForm.classList.remove('was-validated');
+    } else {
+      formSuccessMsg.classList.add('d-none');
+    }
+
+    contactForm.classList.add('was-validated');
+  }, false);
+}
