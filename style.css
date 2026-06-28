@@ -559,3 +559,50 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-muted);
   margin: 0;
 }
+.section-practice-detail {
+  background-color: var(--cream);
+}
+
+.accordion-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  margin-bottom: 0.75rem;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1.1rem 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--section-alt);
+  color: var(--navy);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 2px var(--gold);
+}
+
+.accordion-icon {
+  color: var(--gold);
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.accordion-body {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: var(--section-alt);
+  color: var(--gold);
+}
