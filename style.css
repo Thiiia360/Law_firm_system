@@ -489,3 +489,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.25rem;
   }
 }
+.page-header {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a3560 100%);
+  padding: 8rem 0 4rem;
+}
+
+.page-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 0.75rem;
+}
+
+.page-subtitle {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-top: 1rem;
+  line-height: 1.7;
+}
