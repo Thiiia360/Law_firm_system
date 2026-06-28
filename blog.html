@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Blackwell & Associates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon">⚖</span>
+        <span class="brand-name">Blackwell <span class="brand-amp">&</span> Associates</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link " href="practice-areas.html">Practice Areas</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link btn-consult" href="contact.html">Book Consultation</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <button class="btn-theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode" title="Toggle dark/light mode">
+              <i class="bi bi-moon-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<main id="main-content">
+  <section class="page-header">
+    <div class="container">
+      <p class="hero-eyebrow">Legal Insights</p>
+      <h1 class="page-title">Blog & Articles</h1>
+      <p class="page-subtitle">Practical legal guidance written by our advocates, covering topics that matter to individuals and businesses alike.</p>
+    </div>
+  </section>
+
+  <section class="section-blog py-6">
+  <div class="container">
+
+    <div class="blog-search-bar mb-5">
+      <i class="bi bi-search" aria-hidden="true"></i>
+      <input type="text" id="blogSearchInput" class="form-control" placeholder="Search articles by title or topic..." aria-label="Search blog articles">
+    </div>
+
+    <div class="row g-4" id="blogGrid">
+
+      <div class="col-md-6 col-lg-4 blog-item" data-title="what to do if you are arrested in kenya">
+        <article class="blog-card">
+          <span class="case-tag">Criminal Law</span>
+          <h5>What to Do If You're Arrested in Kenya</h5>
+          <p>A practical, step-by-step guide on your constitutional rights from the moment of arrest through your first court appearance.</p>
+          <span class="blog-date">June 2, 2026</span>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-item" data-title="your rights as a tenant">
+        <article class="blog-card">
+          <span class="case-tag">Property Law</span>
+          <h5>Your Rights as a Tenant in Kenya</h5>
+          <p>Understanding the Rent Restriction Act and what landlords cannot legally do without proper notice.</p>
+          <span class="blog-date">May 20, 2026</span>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-item" data-title="navigating divorce proceedings amicably">
+        <article class="blog-card">
+          <span class="case-tag">Family Law</span>
+          <h5>Navigating Divorce Proceedings Amicably</h5>
+          <p>Why mediation often produces better outcomes than litigation for both parties and any children involved.</p>
+          <span class="blog-date">May 8, 2026</span>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-item" data-title="starting a company in kenya legal checklist">
+        <article class="blog-card">
+          <span class="case-tag">Corporate Law</span>
+          <h5>Starting a Company in Kenya: A Legal Checklist</h5>
+          <p>The essential registration, tax, and compliance steps every new business owner needs to complete.</p>
+          <span class="blog-date">April 27, 2026</span>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-item" data-title="work permits for foreign nationals">
+        <article class="blog-card">
+          <span class="case-tag">Immigration</span>
+          <h5>Work Permits for Foreign Nationals: 2026 Update</h5>
+          <p>Recent changes to Kenya's work permit categories and what they mean for employers and applicants.</p>
+          <span class="blog-date">April 14, 2026</span>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-item" data-title="when to pursue civil litigation versus arbitration">
+        <article class="blog-card">
+          <span class="case-tag">Civil Litigation</span>
+          <h5>Civil Litigation vs. Arbitration: Which Is Right for You?</h5>
+          <p>A comparison of costs, timelines, and outcomes to help you choose the right dispute resolution path.</p>
+          <span class="blog-date">March 30, 2026</span>
+        </article>
+      </div>
+
+    </div>
+
+    <p id="noResultsMsg" class="text-center text-muted mt-4 d-none">No articles match your search.</p>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3"> Blackwell & Associates</div>
+        <p class="footer-about">Full-service advocates and legal consultants serving individuals and businesses across Kenya since 1998.</p>
+        <div class="footer-socials mt-3">
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter / X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6 class="footer-heading">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="practice-areas.html">Practice Areas</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h6 class="footer-heading">Practice Areas</h6>
+        <ul class="footer-links">
+          <li><a href="practice-areas.html">Corporate Law</a></li>
+          <li><a href="practice-areas.html">Criminal Defence</a></li>
+          <li><a href="practice-areas.html">Family Law</a></li>
+          <li><a href="practice-areas.html">Property Law</a></li>
+          <li><a href="practice-areas.html">Immigration</a></li>
+          <li><a href="practice-areas.html">Civil Litigation</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6 class="footer-heading">Contact</h6>
+        <ul class="footer-contact">
+          <li><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> 14th Floor, Anniversary Towers, University Way, Nairobi</li>
+          <li><i class="bi bi-telephone-fill" aria-hidden="true"></i> +254 720 100 200</li>
+          <li><i class="bi bi-envelope-fill" aria-hidden="true"></i> info@blackwelllaw.co.ke</li>
+          <li><i class="bi bi-clock-fill" aria-hidden="true"></i> Mon–Fri: 8:00am – 6:00pm</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider mt-4"/>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center pt-3">
+      <p class="mb-0">© 2026 Blackwell & Associates. All rights reserved.</p>
+      <p class="mb-0">Regulated by the Law Society of Kenya</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
