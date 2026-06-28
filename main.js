@@ -34,3 +34,24 @@ function updateIcon(theme) {
 // Initialize Bootstrap tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+
+// Blog live search/filter
+const blogSearchInput = document.getElementById('blogSearchInput');
+const blogItems = document.querySelectorAll('.blog-item');
+const noResultsMsg = document.getElementById('noResultsMsg');
+
+if (blogSearchInput) {
+  blogSearchInput.addEventListener('input', () => {
+    const query = blogSearchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    blogItems.forEach(item => {
+      const title = item.getAttribute('data-title');
+      const matches = title.includes(query);
+      item.style.display = matches ? '' : 'none';
+      if (matches) visibleCount++;
+    });
+
+    noResultsMsg.classList.toggle('d-none', visibleCount > 0);
+  });
+}
