@@ -878,3 +878,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 0 1rem;
 }
+.brand-icon-img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 4px;
+}
