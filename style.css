@@ -508,3 +508,29 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   line-height: 1.7;
 }
+.section-story {
+  background-color: var(--cream);
+}
+
+.story-image-placeholder {
+  background: var(--section-alt);
+  border: 1px dashed var(--card-border);
+  border-radius: 10px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--text-muted);
+}
+
+.story-image-placeholder i {
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+
+.story-image-placeholder span {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
