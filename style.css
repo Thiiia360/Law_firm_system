@@ -269,3 +269,39 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.03em;
 }
 .practice-link:hover { color: var(--gold-light); }
+
+.section-why {
+  background-color: var(--section-alt);
+}
+
+.why-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: box-shadow 0.2s;
+}
+.why-card:hover {
+  box-shadow: 0 6px 20px rgba(13,31,60,0.08);
+}
+
+.why-icon {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.why-card h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.why-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
