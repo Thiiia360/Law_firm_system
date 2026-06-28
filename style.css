@@ -380,3 +380,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
   border-color: var(--gold);
 }
+.section-cta {
+  background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy) 100%);
+}
+
+.cta-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.cta-sub {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+}
