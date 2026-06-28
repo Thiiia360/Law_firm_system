@@ -809,3 +809,72 @@ h1, h2, h3, h4, h5, h6 {
 .blog-item {
   transition: opacity 0.2s;
 }
+.section-contact {
+  background-color: var(--cream);
+}
+
+.section-contact h3 {
+  font-size: 1.4rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-control, .form-select {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-dark);
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.9rem;
+}
+.form-control:focus, .form-select:focus {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(201,168,76,0.25);
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .form-select:invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.was-validated .form-select:valid,
+.form-select.is-valid {
+  border-color: #28a745;
+}
+
+.contact-info-list li {
+  color: var(--text-muted);
+}
+
+.map-placeholder {
+  background: var(--section-alt);
+  border: 1px dashed var(--card-border);
+  border-radius: 10px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--text-muted);
+}
+.map-placeholder i {
+  font-size: 2rem;
+  color: var(--gold);
+}
+.map-placeholder span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 1rem;
+}
